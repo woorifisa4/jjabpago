@@ -1,22 +1,92 @@
+/* Global Styles */
 * {
     font-family: sans-serif;
     font-size: 15px;
     font-style: normal;
-    padding-left: 5px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#leftmenu {
-    position: absolute;
-    top: 30px;
-    left: 185px;
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-#rightmenu {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+.header-section {
+    display: flex;
+    align-items: center;
 }
 
+/* Left Header */
+.header-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.separator {
+    font-size: 20px;
+    color: #e5e5e5;
+    margin: 0 15px;  /* Increased gap between icons */
+}
+
+/* Right Header */
+#rightheader {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;  /* Adjust spacing between icons and profile */
+}
+
+.profile-img {
+    width: 30px;  /* Profile image size */
+    height: 30px;
+    border-radius: 50%;  /* Makes the image circular */
+    margin-right: 8px;  /* Space between profile image and name */
+}
+
+.profile-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Other styles from previous code */
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
+}
+
+.separator {
+    font-size: 20px;
+    color: #e5e5e5;
+    margin: 0 15px;
+}
+
+#papago_plus_button {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: #2541d3;
+    font-weight: bold;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+#papago_plus_button:hover {
+    border-color: #2541d3;
+}
+
+/* Body */
 #input {
     position: absolute;
     top: 130px;
@@ -29,7 +99,7 @@
 }
 
 td {
-    border-style: none;
+    border: none;
 }
 
 #urlInput {
