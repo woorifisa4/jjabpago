@@ -1,147 +1,156 @@
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>ppapago</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>ppapago</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-<!-- 윗 상단 메뉴 -->
-<img src="../img/papago.png" style="width:150px; height:60px;">
-<div id="leftmenu">
-<input type="button" value="웹사이트 번역" onclick="location.href='https://papago.naver.net/website?locale=ko'">
-<input type="button" value="문서 번역" onclick="location.href='https://papago.naver.com/docs/'">
-<input type="button" value="GYM" onclick="location.href='https://papago.naver.com/gym/home'">
-<input type="button" value="사전" onclick="location.href='https://dict.naver.com/'">
-</div>
-<div id="rightmenu">
-<input type="button" value="작은창 번역">
-<input type="button" value="즐겨찾기">
-<input type="button" value="설정">
-<input type="button" value="계정">
-<input type="button" value="메뉴">
-</div>
+    <!-- 윗 상단 메뉴 -->
+    <img src="../img/papago.png" style="width:150px; height:60px;">
+    <div id="leftmenu">
+        <input type="button" value="웹사이트 번역" onclick="location.href='https://papago.naver.net/website?locale=ko'">
+        <input type="button" value="문서 번역" onclick="location.href='https://papago.naver.com/docs/'">
+        <input type="button" value="GYM" onclick="location.href='https://papago.naver.com/gym/home'">
+        <input type="button" value="사전" onclick="location.href='https://dict.naver.com/'">
+    </div>
+    <div id="rightmenu">
+        <input type="button" value="작은창 번역">
+        <input type="button" value="즐겨찾기">
+        <input type="button" value="설정">
+        <input type="button" value="계정">
+        <input type="button" value="메뉴">
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-<!-- 번역 단락 표 (3*2) -->
-<table id="input">
-<tr>
-<!-- 입력창 표 (3*4) -->
-<td>
-<table class="table" border="1">
-<tr style="height:60px;"><td>
-<select name="inputLang">
-	<option>언어감지</option>
-	<option>한국어</option>
-	<option>영어</option>
-	<option>일본어</option>
-	<option>중국어(간체)</option>
-	<option>중국어(번체)</option>
-	<option>스페인어</option>
-	<option>프랑스어</option>
-	<option>독일어</option>
-	<option>러시아어</option>
-	<option>포르투갈어</option>
-	<option>이탈리아어</option>
-	<option>베트남어</option>
-	<option>태국어</option>
-	<option>인도네시아어</option>
-	<option>힌디어</option>
-</select>
-<td colspan="2"></td>
-<td style="width:50px;"> 
-<input type="button" value="바꿈" style="width:50px;"> 
-</td>
-</tr>
+    <div>
+        <!-- 번역 단락 표 (3*2) -->
+        <table id="input">
+            <tr>
+                <!-- 입력창 표 (3*4) -->
+                <td>
+                    <table class="table" border="1">
+                        <tr style="height:60px;">
+                            <td>
+                                <select name="inputLang">
+                                    <option>언어감지</option>
+                                    <option>한국어</option>
+                                    <option>영어</option>
+                                    <option>일본어</option>
+                                    <option>중국어(간체)</option>
+                                    <option>중국어(번체)</option>
+                                    <option>스페인어</option>
+                                    <option>프랑스어</option>
+                                    <option>독일어</option>
+                                    <option>러시아어</option>
+                                    <option>포르투갈어</option>
+                                    <option>이탈리아어</option>
+                                    <option>베트남어</option>
+                                    <option>태국어</option>
+                                    <option>인도네시아어</option>
+                                    <option>힌디어</option>
+                                </select>
+                            <td colspan="2"></td>
+                            <td style="width:50px;">
+                                <input type="button" value="바꿈" style="width:50px;">
+                            </td>
+                        </tr>
 
-<tr><td colspan="4">
-<textarea rows="12" cols="53">번역할 내용을 입력하세요.</textarea>
-</td></tr>
+                        <tr>
+                            <td colspan="4">
+                                <textarea rows="12" cols="53">번역할 내용을 입력하세요.</textarea>
+                            </td>
+                        </tr>
 
-<tr style="height:60px;">
-<td style="width:80px;">
-<input type="button" value="발음듣기" style="width:80px;"> 
-</td>
-<td style="width:80px;">
-<input type="button" value="복사하기" style="width:80px;"> 
-</td>
-<td></td>
-<td style="width:100px;">
-<input type="submit" value="번역하기" style="width:100%;height:100%;">
-</td>
-</tr>
-</table>
-</td>
+                        <tr style="height:60px;">
+                            <td style="width:80px;">
+                                <input type="button" value="발음듣기" style="width:80px;">
+                            </td>
+                            <td style="width:80px;">
+                                <input type="button" value="복사하기" style="width:80px;">
+                            </td>
+                            <td></td>
+                            <td style="width:100px;">
+                                <input type="submit" value="번역하기" style="width:100%;height:100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
 
-<!-- 번역창 표 (3*5) -->
-<td>
-<table class="table" border="1">
-<tr style="height:60px;"><td>
-<select name="outputLang">
-	<option>한국어</option>
-	<option>영어</option>
-	<option>일본어</option>
-	<option>중국어(간체)</option>
-	<option>중국어(번체)</option>
-	<option>스페인어</option>
-	<option>프랑스어</option>
-	<option>독일어</option>
-	<option>러시아어</option>
-	<option>포르투갈어</option>
-	<option>이탈리아어</option>
-	<option>베트남어</option>
-	<option>태국어</option>
-	<option>인도네시아어</option>
-	<option>힌디어</option>
-</select>
-<td colspan="5"></td>
-</tr>
+                <!-- 번역창 표 (3*5) -->
+                <td>
+                    <table class="table" border="1">
+                        <tr style="height:60px;">
+                            <td>
+                                <select name="outputLang">
+                                    <option>한국어</option>
+                                    <option>영어</option>
+                                    <option>일본어</option>
+                                    <option>중국어(간체)</option>
+                                    <option>중국어(번체)</option>
+                                    <option>스페인어</option>
+                                    <option>프랑스어</option>
+                                    <option>독일어</option>
+                                    <option>러시아어</option>
+                                    <option>포르투갈어</option>
+                                    <option>이탈리아어</option>
+                                    <option>베트남어</option>
+                                    <option>태국어</option>
+                                    <option>인도네시아어</option>
+                                    <option>힌디어</option>
+                                </select>
+                            <td colspan="5"></td>
+                        </tr>
 
-<tr><td colspan="5">
-<textarea rows="12" cols="53"></textarea>
-</td></tr>
+                        <tr>
+                            <td colspan="5">
+                                <textarea rows="12" cols="53"></textarea>
+                            </td>
+                        </tr>
 
-<tr style="height:60px;">
-<td style="width:80px;">
-<input type="button" value="발음듣기" style="width:80px;"> 
-</td>
-<td style="width:80px;">
-<input type="button" value="복사하기" style="width:80px;"> 
-</td>
-<td style="width:80px;">
-<input type="button" value="즐겨찾기" style="width:80px;"> 
-</td>
-<td style="width:80px;">
-<input type="submit" value="공유하기" style="width:100%;height:100%;">
-</td>
-<td></td>
-</tr>
-</table>
+                        <tr style="height:60px;">
+                            <td style="width:80px;">
+                                <input type="button" value="발음듣기" style="width:80px;">
+                            </td>
+                            <td style="width:80px;">
+                                <input type="button" value="복사하기" style="width:80px;">
+                            </td>
+                            <td style="width:80px;">
+                                <input type="button" value="즐겨찾기" style="width:80px;">
+                            </td>
+                            <td style="width:80px;">
+                                <input type="submit" value="공유하기" style="width:100%;height:100%;">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
 
-<tr>
-<td colspan="2" style="height:50px;">
-<input type="checkbox" name="ra" value="auto" checked>자동완성
-</td>
-</tr>
-</table>
-</div>
+            <tr>
+                <td colspan="2" style="height:50px;">
+                    <input type="checkbox" name="ra" value="auto" checked>자동완성
+                </td>
+            </tr>
+        </table>
+    </div>
 
-<hr style="margin-top:460px">
+    <hr style="margin-top:460px">
 
-<div id=urlInput>
-웹사이트 번역
-<input type="text" name="url" placeholder="URL을 입력하세요.">
-<select name="translate">
-	<option>한국어</option>
-	<option>영어</option>
-	<option>일본어</option>
-	<option>중국어(간체)</option>
-	<option>중국어(번체)</option>
-</select>
-<span>로 번역</span>
-<input type="submit" value="->" onclick="location.href='https://papago.naver.net/website?locale=ko&target=ko'">
-</div>
+    <div id=urlInput>
+        웹사이트 번역
+        <input type="text" name="url" placeholder="URL을 입력하세요.">
+        <select name="translate">
+            <option>한국어</option>
+            <option>영어</option>
+            <option>일본어</option>
+            <option>중국어(간체)</option>
+            <option>중국어(번체)</option>
+        </select>
+        <span>로 번역</span>
+        <input type="submit" value="->" onclick="location.href='https://papago.naver.net/website?locale=ko&target=ko'">
+    </div>
 
 </body>
+
 </html>
