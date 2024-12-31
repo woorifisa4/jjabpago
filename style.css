@@ -37,6 +37,7 @@
     text-decoration: none;
     color: #444444;
     font-size: 15px;
+    margin-right: 15px; /* Ensure consistent margin for links */
 }
 
 /* Right Header */
@@ -117,4 +118,68 @@ td {
     position: relative;
     top: 100px;
     text-align: center;
+}
+
+/* Footer */
+footer {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+.footer-app-download {
+    display: flex;
+    align-items: center; /* 중앙 정렬 */
+    margin-bottom: 30px; /* 큰 간격 */
+}
+
+.footer-logo {
+    width: 40px; /* 로고 크기 조정 */
+    height: 40px;
+    margin-right: 10px; /* 로고와 텍스트 간의 간격 */
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* 링크 사이 간격을 동일하게 */
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px; /* 텍스트 크기 조정 */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links-small-gap {
+    margin-bottom: 5px; /* 작은 간격 */
+}
+
+.footer-links-large-gap {
+    margin-bottom: 20px; /* 큰 간격 */
+}
+
+.footer-section span, .footer-section a {
+    display: block;
+    margin-bottom: 10px; /* 항목 간 마진 */
+}
+
+.footer-section:last-child {
+    margin-bottom: 0; /* 마지막 섹션의 마진을 없앰 */
+}
+
+/* Additional Improvements */
+.footer-links a:last-child {
+    margin-right: 0; /* 마지막 링크의 오른쪽 마진 제거 */
 }
