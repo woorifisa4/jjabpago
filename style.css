@@ -22,15 +22,21 @@
 }
 
 /* Left Header */
-.header-logo {
+#leftheader .header-logo {
     height: 40px;
     margin-right: 10px;
 }
 
-.separator {
+#leftheader .separator {
     font-size: 20px;
     color: #e5e5e5;
-    margin: 0 15px;  /* Increased gap between icons */
+    margin: 0 15px;
+}
+
+#leftheader .header-link {
+    text-decoration: none;
+    color: #444444;
+    font-size: 15px;
 }
 
 /* Right Header */
@@ -39,35 +45,14 @@
     align-items: center;
 }
 
-.profile {
+.icons-group {
     display: flex;
     align-items: center;
-    margin-left: 15px;  /* Adjust spacing between icons and profile */
 }
 
-.profile-img {
-    width: 30px;  /* Profile image size */
-    height: 30px;
-    border-radius: 50%;  /* Makes the image circular */
-    margin-right: 8px;  /* Space between profile image and name */
-}
-
-.profile-name {
-    font-size: 15px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Other styles from previous code */
-.icon {
+.icons-group .icon {
     width: 20px;
     height: 20px;
-    margin: 0 15px;
-}
-
-.separator {
-    font-size: 20px;
-    color: #e5e5e5;
     margin: 0 15px;
 }
 
@@ -84,6 +69,32 @@
 
 #papago_plus_button:hover {
     border-color: #2541d3;
+}
+
+#rightheader .separator {
+    font-size: 20px;
+    color: #e5e5e5;
+    margin: 0 15px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;  /* Adjust spacing between icons and profile */
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;  /* Makes the image circular */
+    margin-right: 8px;  /* Space between profile image and name */
+}
+
+.profile-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
 }
 
 /* Body */
