@@ -1,36 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="kr">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jjabpago</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div id="header">
-        <!-- Left Header -->
-        <div id="leftheader" class="header-section">
-            <img src="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg" alt="Logo" class="header-logo">
-            <span class="separator">|</span>
-            <a href="https://dict.naver.com/" class="header-link">사전</a>
-        </div>
-    
-        <!-- Right Header -->
-        <div id="rightheader" class="header-section">
-            <input type="button" value="papago+" id="papago_plus_button">
-            <span class="separator">|</span>
-            <div class="icons-group">
-                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/new-tab-3235840-2703631.png?f=webp" alt="작은창 번역" class="icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/93/93630.png" alt="즐겨찾기" class="icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/94/94678.png" alt="설정" class="icon">
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <!-- Left Header -->
+            <div id="leftheader" class="header-section">
+                <img src="./image/papago-logo.svg" alt="Logo" class="header-logo">
+                <span class="separator">|</span>
+                <a href="https://dict.naver.com/" class="header-link">사전</a>
             </div>
-            <span class="separator">|</span>
-            <div class="profile">
-                <img src="https://papago.naver.com/static/img/papago_og.png" alt="Profile" class="profile-img">
-                <span class="profile-name">남승현</span>
+
+            <!-- Right Header -->
+            <div id="rightheader" class="header-section">
+                <input type="button" value="papago+" id="papago_plus_button">
+                <span class="separator">|</span>
+                <div class="icons-group">
+                    <img src="./image/move-page-icon.webp" alt="작은창 번역" class="icon">
+                    <img src="./image/favorite-icon.png" alt="즐겨찾기" class="icon">
+                    <img src="./image/setting-icon.png" alt="설정" class="icon">
+                </div>
+                <span class="separator">|</span>
+                <div class="profile">
+                    <img src="./image/profile-image.png" alt="Profile" class="profile-img">
+                    <span class="profile-name">남승현</span>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
+
+    <!-- Body -->
 
     <div>
         <!-- 번역 단락 표 (3*2) -->
@@ -61,7 +68,8 @@
                                 </select>
                             <td colspan="2"></td>
                             <td style="width:50px;">
-                                <input type="button" value="바꿈" style="width:50px;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3580/3580294.png" alt="언어변경"
+                                    style="width:50px;">
                             </td>
                         </tr>
 
@@ -143,6 +151,8 @@
     </div>
 
     <hr style="margin-top:460px">
+
+    <!-- Footer -->
 
     <div id=urlInput>
         웹사이트 번역
