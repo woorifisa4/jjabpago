@@ -53,7 +53,7 @@
 .icons-group .icon {
     width: 20px;
     height: 20px;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 #papago_plus_button {
@@ -81,14 +81,14 @@
 .profile {
     display: flex;
     align-items: center;
-    margin-left: 15px;  /* Adjust spacing between icons and profile */
+    margin-left: 10px;  /* Adjust spacing between icons and profile */
 }
 
 .profile-img {
     width: 30px;
     height: 30px;
     border-radius: 50%;  /* Makes the image circular */
-    margin-right: 8px;  /* Space between profile image and name */
+    margin-right: 10px;  /* Space between profile image and name */
 }
 
 .profile-name {
