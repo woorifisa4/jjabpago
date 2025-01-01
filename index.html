@@ -37,120 +37,83 @@
         </div>
     </header>
 
-    <!-- Body -->
-
-    <div>
-        <!-- 번역 단락 표 (3*2) -->
-        <table id="input">
-            <tr>
-                <!-- 입력창 표 (3*4) -->
-                <td>
-                    <table class="table" border="1">
-                        <tr style="height:60px;">
-                            <td>
-                                <select name="inputLang">
-                                    <option>언어감지</option>
-                                    <option>한국어</option>
-                                    <option>영어</option>
-                                    <option>일본어</option>
-                                    <option>중국어(간체)</option>
-                                    <option>중국어(번체)</option>
-                                    <option>스페인어</option>
-                                    <option>프랑스어</option>
-                                    <option>독일어</option>
-                                    <option>러시아어</option>
-                                    <option>포르투갈어</option>
-                                    <option>이탈리아어</option>
-                                    <option>베트남어</option>
-                                    <option>태국어</option>
-                                    <option>인도네시아어</option>
-                                    <option>힌디어</option>
-                                </select>
-                            <td colspan="2"></td>
-                            <td style="width:50px;">
-                                <img src="https://cdn-icons-png.flaticon.com/512/3580/3580294.png" alt="언어변경"
-                                    style="width:50px;">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="4">
-                                <textarea rows="12" cols="53">번역할 내용을 입력하세요.</textarea>
-                            </td>
-                        </tr>
-
-                        <tr style="height:60px;">
-                            <td style="width:80px;">
-                                <input type="button" value="발음듣기" style="width:80px;">
-                            </td>
-                            <td style="width:80px;">
-                                <input type="button" value="복사하기" style="width:80px;">
-                            </td>
-                            <td></td>
-                            <td style="width:100px;">
-                                <input type="submit" value="번역하기" style="width:100%;height:100%;">
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-
-                <!-- 번역창 표 (3*5) -->
-                <td>
-                    <table class="table" border="1">
-                        <tr style="height:60px;">
-                            <td>
-                                <select name="outputLang">
-                                    <option>한국어</option>
-                                    <option>영어</option>
-                                    <option>일본어</option>
-                                    <option>중국어(간체)</option>
-                                    <option>중국어(번체)</option>
-                                    <option>스페인어</option>
-                                    <option>프랑스어</option>
-                                    <option>독일어</option>
-                                    <option>러시아어</option>
-                                    <option>포르투갈어</option>
-                                    <option>이탈리아어</option>
-                                    <option>베트남어</option>
-                                    <option>태국어</option>
-                                    <option>인도네시아어</option>
-                                    <option>힌디어</option>
-                                </select>
-                            <td colspan="5"></td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="5">
-                                <textarea rows="12" cols="53"></textarea>
-                            </td>
-                        </tr>
-
-                        <tr style="height:60px;">
-                            <td style="width:80px;">
-                                <input type="button" value="발음듣기" style="width:80px;">
-                            </td>
-                            <td style="width:80px;">
-                                <input type="button" value="복사하기" style="width:80px;">
-                            </td>
-                            <td style="width:80px;">
-                                <input type="button" value="즐겨찾기" style="width:80px;">
-                            </td>
-                            <td style="width:80px;">
-                                <input type="submit" value="공유하기" style="width:100%;height:100%;">
-                            </td>
-                            <td></td>
-                        </tr>
-                    </table>
-
-            <tr>
-                <td colspan="2" style="height:50px;">
-                    <input type="checkbox" name="ra" value="auto" checked>자동완성
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <hr style="margin-top:460px">
+    <!-- Main -->
+    <main>
+        <div style="display: flex; justify-content: space-between; padding: 20px; gap: 4%;">
+    
+            <!-- 입력창 영역 -->
+            <div style="flex: 1; border: 1px solid #000; padding: 20px; border-radius: 10px; margin-left: 10%; margin-right: 2%;">
+                <div style="margin-bottom: 20px; display: flex; align-items: center;">
+                    <select name="inputLang" style="flex: 1;">
+                        <option>언어감지</option>
+                        <option>한국어</option>
+                        <option>영어</option>
+                        <option>일본어</option>
+                        <option>중국어(간체)</option>
+                        <option>중국어(번체)</option>
+                        <option>스페인어</option>
+                        <option>프랑스어</option>
+                        <option>독일어</option>
+                        <option>러시아어</option>
+                        <option>포르투갈어</option>
+                        <option>이탈리아어</option>
+                        <option>베트남어</option>
+                        <option>태국어</option>
+                        <option>인도네시아어</option>
+                        <option>힌디어</option>
+                    </select>
+                    <div style="flex: 0;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3580/3580294.png" alt="언어변경" style="width: 50px;">
+                    </div>
+                </div>
+                
+                <textarea rows="12" cols="53" placeholder="번역할 내용을 입력하세요." style="width: 100%;"></textarea>
+    
+                <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <button style="width: 80px;">발음듣기</button>
+                    <button style="width: 80px;">복사하기</button>
+                    <div style="flex: 1;"></div>
+                    <input type="submit" value="번역하기" style="width: 100%; height: 100%; background-color: #4CAF50; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px;">
+                </div>
+            </div>
+    
+            <!-- 번역창 영역 -->
+            <div style="flex: 1; border: 1px solid #000; padding: 20px; border-radius: 10px; margin-left: 2%; margin-right: 10%;">
+                <div style="margin-bottom: 20px; display: flex; align-items: center;">
+                    <select name="outputLang" style="flex: 1;">
+                        <option>한국어</option>
+                        <option>영어</option>
+                        <option>일본어</option>
+                        <option>중국어(간체)</option>
+                        <option>중국어(번체)</option>
+                        <option>스페인어</option>
+                        <option>프랑스어</option>
+                        <option>독일어</option>
+                        <option>러시아어</option>
+                        <option>포르투갈어</option>
+                        <option>이탈리아어</option>
+                        <option>베트남어</option>
+                        <option>태국어</option>
+                        <option>인도네시아어</option>
+                        <option>힌디어</option>
+                    </select>
+                </div>
+    
+                <textarea rows="12" cols="53" style="width: 100%;"></textarea>
+    
+                <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <button style="width: 80px;">발음듣기</button>
+                    <button style="width: 80px;">복사하기</button>
+                    <button style="width: 80px;">즐겨찾기</button>
+                    <input type="submit" value="공유하기" style="width: 100%; height: 100%; background-color: #4CAF50; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px;">
+                </div>
+            </div>
+    
+        </div>
+    
+    </main>
+    
+    
 
     <!-- Footer -->
     <footer>
