@@ -39,10 +39,33 @@
 
     <!-- Main -->
     <main>
-        <div class="container">
+        <div class="tabs-container">
+            <!-- 탭 영역 -->
+            <div class="tabs">
+                <div class="tab" id="tab-text">
+                    <img src="./image/icon/text.svg" alt="텍스트" class="tab-icon">
+                    텍스트
+                </div>
+                <div class="tab">
+                    <img src="./image/icon/image.svg" alt="이미지" class="tab-icon">
+                    이미지
+                </div>
+                <div class="tab">
+                    <img src="./image/icon/document.svg" alt="문서" class="tab-icon">
+                    문서
+                </div>
+                <div class="tab">
+                    <img src="./image/icon/internet.svg" alt="웹사이트" class="tab-icon">
+                    웹사이트
+                </div>
+            </div>
+        </div>
+
+        <!-- 번역 인터페이스 -->
+        <div class="translation-container">
             <!-- 입력창 영역 -->
-            <div class="input-area">
-                <div class="language-selection">
+            <div class="translation-box input-box">
+                <div class="language-select">
                     <select name="inputLang">
                         <option>언어감지</option>
                         <option>한국어</option>
@@ -61,19 +84,19 @@
                         <option>인도네시아어</option>
                         <option>힌디어</option>
                     </select>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3580/3580294.png" alt="언어변경" class="lang-switch-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3580/3580294.png" alt="언어변경">
                 </div>
-                <textarea placeholder="번역할 내용을 입력하세요."></textarea>
+                <textarea rows="12" placeholder="번역할 내용을 입력하세요."></textarea>
                 <div class="button-group">
                     <button>발음듣기</button>
                     <button>복사하기</button>
-                    <input type="submit" value="번역하기" class="translate-btn">
+                    <input type="submit" value="번역하기">
                 </div>
             </div>
 
             <!-- 번역창 영역 -->
-            <div class="output-area">
-                <div class="language-selection">
+            <div class="translation-box output-box">
+                <div class="language-select">
                     <select name="outputLang">
                         <option>한국어</option>
                         <option>영어</option>
@@ -92,18 +115,16 @@
                         <option>힌디어</option>
                     </select>
                 </div>
-                <textarea></textarea>
+                <textarea rows="12"></textarea>
                 <div class="button-group">
                     <button>발음듣기</button>
                     <button>복사하기</button>
                     <button>즐겨찾기</button>
-                    <input type="submit" value="공유하기" class="share-btn">
+                    <input type="submit" value="공유하기">
                 </div>
             </div>
         </div>
     </main>
-    
-    
 
     <!-- Footer -->
     <footer>

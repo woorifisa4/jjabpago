@@ -96,104 +96,135 @@
 }
 
 /* Main */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
-
 main {
-    display: flex;
-    justify-content: center;
+    max-width: 80rem;
+    margin: 0 auto;
     padding: 20px;
 }
 
-.container {
+/* Tabs Container */
+.tabs-container {
+    display: flex;
+    justify-content: center; /* 탭 중앙 정렬 */
+    margin-bottom: 20px;
+}
+
+/* Tabs Styling */
+.tabs {
+    max-width: 40rem; /* 적당한 길이 */
+    display: flex;
+    padding: 3px;
+    background-color: #F0F1F2;
+    border: 1px solid #EEEFF0;
+    border-radius: 30px; /* 직선형 테두리 */
+    overflow: hidden; /* 내부 요소가 테두리를 벗어나지 않도록 */
+}
+
+/* Individual Tab */
+.tab {
+    padding: 10px 20px; /* 탭 크기 조정 */
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    background-color: #F0F1F2;
+    color: #808080;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #F0F1F2; /* 상단 직선 */
+    border-bottom: 2px solid #F0F1F2; /* 하단 직선 */
+    border-radius: 30px;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 내용이 넘치면 숨김 */
+    text-overflow: ellipsis; /* 넘친 텍스트에 ... 표시 */
+}
+
+/* Add Icons to Tabs */
+.tab .tab-icon {
+    width: 16px; /* 아이콘 크기 */
+    height: 16px;
+    margin-right: 8px; /* 텍스트와 아이콘 간격 */
+    flex-shrink: 0; /* 아이콘 크기 고정 */
+}
+
+
+/* Active Tab */
+#tab-text {
+    background-color: white;
+    border: 2px solid #1FDC6D;
+    color: #1FDC6D;
+}
+
+/* Translation Container */
+.translation-container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
     gap: 4%;
 }
 
-/* Input and Output Areas */
-.input-area,
-.output-area {
+/* Translation Box */
+.translation-box {
     flex: 1;
     border: 1px solid #000;
-    border-radius: 10px;
     padding: 20px;
+    border-radius: 10px;
     background-color: #fff;
 }
 
-.input-area {
+.input-box {
     margin-right: 2%;
 }
 
-.output-area {
+.output-box {
     margin-left: 2%;
 }
 
-/* Language Selection */
-.language-selection {
+.language-select {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.language-selection select {
+.language-select select {
     flex: 1;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-.lang-switch-icon {
-    width: 50px;
+.language-select img {
+    width: 30px;
     margin-left: 10px;
 }
 
-/* Textarea */
 textarea {
     width: 100%;
     height: 150px;
-    padding: 10px;
+    resize: none;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    resize: none;
+    padding: 10px;
+    font-size: 14px;
 }
 
-/* Button Group */
 .button-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
 }
 
-.button-group button {
-    width: 80px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #ddd;
-}
-
-.translate-btn,
-.share-btn {
-    flex: 1;
-    background-color: #4CAF50;
-    color: white;
+.button-group button,
+.button-group input[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
+    background-color: #4CAF50;
+    color: white;
 }
 
-.translate-btn:hover,
-.share-btn:hover {
+.button-group button:hover,
+.button-group input[type="submit"]:hover {
     background-color: #45a049;
 }
 
