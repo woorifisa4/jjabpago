@@ -13,7 +13,16 @@
         tailwind.config = {
             content: [
                 './index.html'
-            ]
+            ],
+            theme: {
+                extend: {
+                    colors: {
+                        'footerTextColor': '#666',
+                        'papagoColor': '#1FDC6D',
+                        'papagoPlusColor': '#2541d3',
+                    },
+                },
+            }
         }
     </script>
 </head>
@@ -31,7 +40,7 @@
         <!-- Right Header -->
         <div id="rightheader" class="flex items-center">
             <input type="button" value="papago+" id="papago_plus_button"
-                class="border border-gray-300 rounded-lg py-2 px-4 bg-white text-papago-plus font-bold cursor-pointer transition-all duration-300 hover:border-papago-plus">
+                class="border border-gray-300 rounded-lg py-2 px-4 bg-white text-papagoPlusColor font-bold cursor-pointer transition-all duration-300 hover:border-papagoPlusColor">
             <span class="text-xl text-gray-300 mx-3">|</span>
             <div class="flex items-center">
                 <img src="./image/icon/move-page.webp" alt="작은창 번역" class="w-5 h-5 mx-2">

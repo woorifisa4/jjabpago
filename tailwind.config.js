@@ -5,7 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        footerTextColor: '#666',
+        'footerTextColor': '#666',
+        'papagoColor': '#1FDC6D',
+        'papagoPlusColor': '#2541d3',
       },
     },
   },
