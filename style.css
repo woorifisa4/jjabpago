@@ -1,6 +1,7 @@
+/* Global Styles */
 * {
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px to rem */
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
 }
 
 .header-section {
@@ -21,21 +22,21 @@
 }
 
 #leftheader .header-logo {
-    height: 40px;
-    margin-right: 10px;
+    height: 2.5rem; /* 40px to rem */
+    margin-right: 0.625rem; /* 10px to rem */
 }
 
 #leftheader .separator {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px to rem */
     color: #e5e5e5;
-    margin: 0 15px;
+    margin: 0 0.9375rem; /* 15px to rem */
 }
 
 #leftheader .header-link {
     text-decoration: none;
     color: #444444;
-    font-size: 15px;
-    margin-right: 15px;
+    font-size: 0.9375rem; /* 15px to rem */
+    margin-right: 0.9375rem; /* 15px to rem */
 }
 
 #rightheader {
@@ -49,15 +50,15 @@
 }
 
 .icons-group .icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
+    width: 1.25rem; /* 20px to rem */
+    height: 1.25rem; /* 20px to rem */
+    margin: 0 0.625rem; /* 10px to rem */
 }
 
 #papago_plus_button {
     border: 1px solid #e5e5e5;
-    border-radius: 8px;
-    padding: 8px 15px;
+    border-radius: 0.5rem; /* 8px to rem */
+    padding: 0.5rem 0.9375rem; /* 8px 15px to rem */
     background-color: #ffffff;
     color: #2541d3;
     font-weight: bold;
@@ -70,27 +71,27 @@
 }
 
 #rightheader .separator {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px to rem */
     color: #e5e5e5;
-    margin: 0 15px;
+    margin: 0 0.9375rem; /* 15px to rem */
 }
 
 /* Profile Section */
 .profile {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 0.625rem; /* 10px to rem */
 }
 
 .profile-img {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem; /* 30px to rem */
+    height: 1.875rem; /* 30px to rem */
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 0.625rem; /* 10px to rem */
 }
 
 .profile-name {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px to rem */
     font-weight: bold;
     color: #333;
 }
@@ -99,30 +100,30 @@
 main {
     max-width: 80rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem; /* 20px to rem */
 }
 
 /* Tabs Container */
 .tabs-container {
     display: flex;
     justify-content: center; /* 탭 중앙 정렬 */
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px to rem */
 }
 
 /* Tabs Styling */
 .tabs {
     max-width: 40rem; /* 적당한 길이 */
     display: flex;
-    padding: 3px;
+    padding: 0.1875rem; /* 3px to rem */
     background-color: #F0F1F2;
     border: 1px solid #EEEFF0;
-    border-radius: 30px; /* 직선형 테두리 */
+    border-radius: 1.875rem; /* 30px to rem */
     overflow: hidden; /* 내부 요소가 테두리를 벗어나지 않도록 */
 }
 
 /* Individual Tab */
 .tab {
-    padding: 10px 20px; /* 탭 크기 조정 */
+    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
     cursor: pointer;
     text-align: center;
     flex: 1;
@@ -132,9 +133,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #F0F1F2; /* 상단 직선 */
-    border-bottom: 2px solid #F0F1F2; /* 하단 직선 */
-    border-radius: 30px;
+    border-top: 0.125rem solid #F0F1F2; /* 2px to rem */
+    border-bottom: 0.125rem solid #F0F1F2; /* 2px to rem */
+    border-radius: 1.875rem; /* 30px to rem */
     white-space: nowrap; /* 텍스트 줄바꿈 방지 */
     overflow: hidden; /* 내용이 넘치면 숨김 */
     text-overflow: ellipsis; /* 넘친 텍스트에 ... 표시 */
@@ -142,17 +143,16 @@ main {
 
 /* Add Icons to Tabs */
 .tab .tab-icon {
-    width: 16px; /* 아이콘 크기 */
-    height: 16px;
-    margin-right: 8px; /* 텍스트와 아이콘 간격 */
+    width: 1rem; /* 16px to rem */
+    height: 1rem; /* 16px to rem */
+    margin-right: 0.5rem; /* 8px to rem */
     flex-shrink: 0; /* 아이콘 크기 고정 */
 }
-
 
 /* Active Tab */
 #tab-text {
     background-color: white;
-    border: 2px solid #1FDC6D;
+    border: 0.125rem solid #1FDC6D; /* 2px to rem */
     color: #1FDC6D;
 }
 
@@ -166,9 +166,9 @@ main {
 /* Translation Box */
 .translation-box {
     flex: 1;
-    border: 1px solid #000;
-    padding: 20px;
-    border-radius: 10px;
+    border: 0.0625rem solid #000; /* 1px to rem */
+    padding: 1.25rem; /* 20px to rem */
+    border-radius: 0.625rem; /* 10px to rem */
     background-color: #fff;
 }
 
@@ -183,28 +183,28 @@ main {
 .language-select {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px to rem */
 }
 
 .language-select select {
     flex: 1;
-    padding: 5px;
+    padding: 0.3125rem; /* 5px to rem */
 }
 
 .language-select img {
-    width: 30px;
-    margin-left: 10px;
+    width: 1.875rem; /* 30px to rem */
+    margin-left: 0.625rem; /* 10px to rem */
 }
 
 textarea {
     width: 100%;
-    height: 150px;
+    height: 9.375rem; /* 150px to rem */
     resize: none;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 14px;
+    margin-bottom: 1.25rem; /* 20px to rem */
+    border: 0.0625rem solid #ccc; /* 1px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    padding: 0.625rem; /* 10px to rem */
+    font-size: 0.875rem; /* 14px to rem */
 }
 
 .button-group {
@@ -215,9 +215,9 @@ textarea {
 
 .button-group button,
 .button-group input[type="submit"] {
-    padding: 10px;
+    padding: 0.625rem; /* 10px to rem */
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px to rem */
     cursor: pointer;
     background-color: #4CAF50;
     color: white;
@@ -231,40 +231,40 @@ textarea {
 /* Footer */
 footer {
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px to rem */
     color: #666;
     line-height: 1.6;
-    padding-top: 30px;
-    padding-left: 40px;
-    border-top: 1px solid black;
+    padding-top: 1.875rem; /* 30px to rem */
+    padding-left: 2.5rem; /* 40px to rem */
+    border-top: 0.0625rem solid black; /* 1px to rem */
 }
 
 .footer-section {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; /* 15px to rem */
 }
 
 .footer-app-download {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px to rem */
 }
 
 .footer-logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 2.5rem; /* 40px to rem */
+    height: 2.5rem; /* 40px to rem */
+    margin-right: 0.625rem; /* 10px to rem */
 }
 
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0.9375rem; /* 15px to rem */
 }
 
 .footer-links a {
     color: #666;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px to rem */
 }
 
 .footer-links a:hover {
@@ -272,16 +272,16 @@ footer {
 }
 
 .footer-links-small-gap {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; /* 5px to rem */
 }
 
 .footer-links-large-gap {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px to rem */
 }
 
 .footer-section span {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px to rem */
 }
 
 .footer-section a {
