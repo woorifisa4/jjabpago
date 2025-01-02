@@ -20,29 +20,28 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <div id="header">
-            <!-- Left Header -->
-            <div id="leftheader" class="header-section">
-                <img src="./image/papago-logo.svg" alt="Logo" class="header-logo">
-                <span class="separator">|</span>
-                <a href="https://dict.naver.com/" class="header-link">사전</a>
-            </div>
+    <header class="flex justify-between items-center p-5">
+        <!-- Left Header -->
+        <div id="leftheader" class="flex items-center">
+            <img src="./image/papago-logo.svg" alt="Logo" class="h-10 mr-2.5">
+            <span class="text-xl text-gray-300 mx-3">|</span>
+            <a href="https://dict.naver.com/" class="text-gray-700 text-sm mr-3 hover:underline">사전</a>
+        </div>
 
-            <!-- Right Header -->
-            <div id="rightheader" class="header-section">
-                <input type="button" value="papago+" id="papago_plus_button">
-                <span class="separator">|</span>
-                <div class="icons-group">
-                    <img src="./image/icon/move-page.webp" alt="작은창 번역" class="icon">
-                    <img src="./image/icon/star.svg" alt="즐겨찾기" class="icon">
-                    <img src="./image/icon/setting.svg" alt="설정" class="icon">
-                </div>
-                <span class="separator">|</span>
-                <div class="profile">
-                    <img src="./image/profile-image.png" alt="Profile" class="profile-img">
-                    <span class="profile-name">남승현</span>
-                </div>
+        <!-- Right Header -->
+        <div id="rightheader" class="flex items-center">
+            <input type="button" value="papago+" id="papago_plus_button"
+                class="border border-gray-300 rounded-lg py-2 px-4 bg-white text-papago-plus font-bold cursor-pointer transition-all duration-300 hover:border-papago-plus">
+            <span class="text-xl text-gray-300 mx-3">|</span>
+            <div class="flex items-center">
+                <img src="./image/icon/move-page.webp" alt="작은창 번역" class="w-5 h-5 mx-2">
+                <img src="./image/icon/star.svg" alt="즐겨찾기" class="w-5 h-5 mx-2">
+                <img src="./image/icon/setting.svg" alt="설정" class="w-5 h-5 mx-2">
+            </div>
+            <span class="text-xl text-gray-300 mx-3">|</span>
+            <div class="flex items-center ml-2.5">
+                <img src="./image/profile-image.png" alt="Profile" class="w-7 h-7 rounded-full mr-2.5">
+                <span class="text-sm font-bold text-gray-800">남승현</span>
             </div>
         </div>
     </header>
@@ -150,25 +149,27 @@
             <img src="./image/papago-app-logo.png" alt="Logo" class="w-10 h-10 mr-2.5">
             <p>App Download</p>
         </div>
-    
+
         <div class="flex flex-wrap gap-3 mb-1">
             <a href="https://policy.naver.com/rules/service.html" class="hover:underline">이용 약관</a>
             <a href="https://policy.naver.com/policy/privacy.html" class="hover:underline font-bold">개인정보처리방침</a>
             <a href="https://policy.naver.com/policy/disclaimer.html" class="hover:underline font-bold">책임의 한계와 법적고지</a>
         </div>
-    
+
         <div class="flex flex-wrap gap-3 mb-1">
             <a href="https://help.naver.com/service/16448/category/bookmark?lang=ko" class="hover:underline">고객센터</a>
-            <a href="https://help.naver.com/suggestion/input.help?serviceNo=16448&lang=ko&as_home=true" class="hover:underline">의견제안</a>
-            <a href="https://help.naver.com/suggestion/input.help?serviceNo=16448&lang=ko&as_home=true" class="hover:underline">준수사항</a>
+            <a href="https://help.naver.com/suggestion/input.help?serviceNo=16448&lang=ko&as_home=true"
+                class="hover:underline">의견제안</a>
+            <a href="https://help.naver.com/suggestion/input.help?serviceNo=16448&lang=ko&as_home=true"
+                class="hover:underline">준수사항</a>
             <span>품질 개선 동의</span>
             <span>단축키</span>
         </div>
-    
+
         <div class="mb-7">
             <a href="https://papago.naver.com/business" class="font-bold hover:underline">제휴∙API 이용문의</a>
         </div>
-    
+
         <div>
             <a href="https://www.navercorp.com/ko" class="hover:underline">ⓒ NAVER Corp.</a>
         </div>
