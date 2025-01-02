@@ -184,6 +184,7 @@ main {
 
 .language-select {
     display: flex;
+    justify-content: space-between; 
     align-items: center;
     margin-bottom: 1.25rem;
 }
