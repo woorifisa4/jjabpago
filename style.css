@@ -236,7 +236,7 @@ footer {
     line-height: 1.6;
     padding-top: 1.875rem; /* 30px to rem */
     padding-left: 2.5rem; /* 40px to rem */
-    border-top: 0.0625rem solid black; /* 1px to rem */
+    border-top: 0.0625rem solid #EDEDED; /* 1px to rem */
 }
 
 .footer-section {
