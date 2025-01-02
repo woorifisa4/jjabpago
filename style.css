@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --papago-color: #1FDC6D;
+    --papago-plus-color: #2541d3;
+}
+
 /* Header */
 #header {
     display: flex;
@@ -60,14 +65,14 @@
     border-radius: 0.5rem; /* 8px to rem */
     padding: 0.5rem 0.9375rem; /* 8px 15px to rem */
     background-color: #ffffff;
-    color: #2541d3;
+    color: var(--papago-plus-color);
     font-weight: bold;
     cursor: pointer;
     transition: border-color 0.3s ease;
 }
 
 #papago_plus_button:hover {
-    border-color: #2541d3;
+    border-color: var(--papago-plus-color);
 }
 
 #rightheader .separator {
@@ -151,8 +156,8 @@ main {
 /* Active Tab */
 .tab.active {
     background-color: white;
-    color: #1FDC6D;
-    border: 0.125rem solid #1FDC6D;
+    color: var(--papago-color);
+    border: 0.125rem solid var(--papago-color);
 }
 
 .tab.active .tab-icon {
