@@ -65,7 +65,7 @@
 
         <!-- 번역 인터페이스 -->
         <div class="translation-container">
-            <!-- 입력창 영역 -->
+            <!-- 번역 전 영역 -->
             <div class="translation-box input-box">
                 <div class="language-select">
                     <select name="inputLang">
@@ -90,14 +90,16 @@
                 </div>
                 <textarea id="inputText" rows="12" placeholder="번역할 내용을 입력하세요." maxlength="500"></textarea>
                 <div class="char-count">0/500</div>
-                <div class="button-group">
-                    <div class="button">발음듣기</div>
-                    <div class="button">복사하기</div>
-                    <div class="button">번역하기</div>
+                <div class="additional-function-group">
+                    <div class="button-group">
+                        <img src="./image/icon/sound.svg" alt="발음 듣기" class="icon-size">
+                        <img src="./image/icon/copy.svg" alt="복사하기" class="icon-size">
+                    </div>
+                    <div class="button translate-button">번역하기</div>
                 </div>
             </div>
         
-            <!-- 번역창 영역 -->
+            <!-- 번역 후 영역 -->
             <div class="translation-box output-box">
                 <div class="language-select">
                     <select name="outputLang">
@@ -120,10 +122,8 @@
                 </div>
                 <div class="output-text">번역된 내용이 여기에 표시됩니다.</div>
                 <div class="button-group">
-                    <div class="button">발음듣기</div>
-                    <div class="button">복사하기</div>
-                    <div class="button">즐겨찾기</div>
-                    <div class="button">공유하기</div>
+                    <img src="./image/icon/sound.svg" alt="발음 듣기" class="icon-size">
+                    <img src="./image/icon/copy.svg" alt="복사하기" class="icon-size">
                 </div>
             </div>
         </div>
