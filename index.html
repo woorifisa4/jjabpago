@@ -88,14 +88,15 @@
                     </select>
                     <img src="./image/icon/change.webp" alt="언어변경">
                 </div>
-                <textarea rows="12" placeholder="번역할 내용을 입력하세요."></textarea>
+                <textarea id="inputText" rows="12" placeholder="번역할 내용을 입력하세요." maxlength="500"></textarea>
+                <div class="char-count">0/500</div>
                 <div class="button-group">
-                    <button>발음듣기</button>
-                    <button>복사하기</button>
-                    <input type="submit" value="번역하기">
+                    <div class="button">발음듣기</div>
+                    <div class="button">복사하기</div>
+                    <div class="button">번역하기</div>
                 </div>
             </div>
-
+        
             <!-- 번역창 영역 -->
             <div class="translation-box output-box">
                 <div class="language-select">
@@ -117,15 +118,16 @@
                         <option>힌디어</option>
                     </select>
                 </div>
-                <textarea rows="12"></textarea>
+                <div class="output-text">번역된 내용이 여기에 표시됩니다.</div>
                 <div class="button-group">
-                    <button>발음듣기</button>
-                    <button>복사하기</button>
-                    <button>즐겨찾기</button>
-                    <input type="submit" value="공유하기">
+                    <div class="button">발음듣기</div>
+                    <div class="button">복사하기</div>
+                    <div class="button">즐겨찾기</div>
+                    <div class="button">공유하기</div>
                 </div>
             </div>
         </div>
+        
     </main>
 
     <!-- Footer -->
