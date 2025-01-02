@@ -104,27 +104,26 @@ main {
 }
 
 /* Tabs Container */
-/* Tabs Container */
 .tabs-container {
     display: flex;
-    justify-content: center; /* 탭 중앙 정렬 */
-    margin-bottom: 1.25rem; /* 20px to rem */
+    justify-content: center;
+    margin-bottom: 1.25rem;
 }
 
 /* Tabs Styling */
 .tabs {
-    max-width: 40rem; /* 적당한 길이 */
+    max-width: 40rem;
     display: flex;
-    padding: 0.1875rem; /* 3px to rem */
+    padding: 0.1875rem;
     background-color: #F0F1F2;
     border: 1px solid #EEEFF0;
-    border-radius: 1.875rem; /* 30px to rem */
-    overflow: hidden; /* 내부 요소가 테두리를 벗어나지 않도록 */
+    border-radius: 1.875rem;
+    overflow: hidden;
 }
 
 /* Individual Tab */
 .tab {
-    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
+    padding: 0.625rem 1.25rem;
     cursor: pointer;
     text-align: center;
     flex: 1;
@@ -134,27 +133,32 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1.875rem; /* 30px to rem */
-    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-    overflow: hidden; /* 내용이 넘치면 숨김 */
-    text-overflow: ellipsis; /* 넘친 텍스트에 ... 표시 */
+    border-radius: 1.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Add Icons to Tabs */
 .tab .tab-icon {
-    width: 1rem; /* 16px to rem */
-    height: 1rem; /* 16px to rem */
-    margin-right: 0.5rem; /* 8px to rem */
-    flex-shrink: 0; /* 아이콘 크기 고정 */
-    transition: fill 0.3s ease; /* 아이콘 색상 변경 애니메이션 */
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+    transition: filter 0.3s ease;
 }
 
 /* Active Tab */
 .tab.active {
     background-color: white;
     color: #1FDC6D;
-    border: 0.125rem solid #1FDC6D; /* 2px to rem */
+    border: 0.125rem solid #1FDC6D;
 }
+
+.tab.active .tab-icon {
+    filter: invert(38%) sepia(73%) saturate(470%) hue-rotate(92deg) brightness(95%) contrast(87%);
+}
+
 
 /* Translation Container */
 .translation-container {
