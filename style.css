@@ -169,7 +169,7 @@ main {
 .translation-container {
     display: flex;
     justify-content: space-between;
-    gap: 0.5rem;  /* 번역 전 후 div가 붙어 있도록 간격을 적절히 설정 */
+    gap: 0.5rem;
 }
 
 .translation-box {
@@ -213,10 +213,8 @@ textarea {
     overflow-y: auto;
     margin-bottom: 1.25rem;
     border: 0.0625rem solid #ccc;
-    border-radius: 0.3125rem;
     padding: 0.625rem;
     font-size: 0.875rem;
-    background-color: #f9f9f9;
 }
 
 /* 문자 수 */
