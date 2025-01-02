@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 /* Header */
 #header {
     display: flex;
@@ -108,6 +104,7 @@ main {
 }
 
 /* Tabs Container */
+/* Tabs Container */
 .tabs-container {
     display: flex;
     justify-content: center; /* 탭 중앙 정렬 */
@@ -133,12 +130,10 @@ main {
     flex: 1;
     background-color: #F0F1F2;
     color: #808080;
-    transition: background-color 0.3s ease, border 0.3s ease;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 0.125rem solid #F0F1F2; /* 2px to rem */
-    border-bottom: 0.125rem solid #F0F1F2; /* 2px to rem */
     border-radius: 1.875rem; /* 30px to rem */
     white-space: nowrap; /* 텍스트 줄바꿈 방지 */
     overflow: hidden; /* 내용이 넘치면 숨김 */
@@ -151,13 +146,14 @@ main {
     height: 1rem; /* 16px to rem */
     margin-right: 0.5rem; /* 8px to rem */
     flex-shrink: 0; /* 아이콘 크기 고정 */
+    transition: fill 0.3s ease; /* 아이콘 색상 변경 애니메이션 */
 }
 
 /* Active Tab */
-#tab-text {
+.tab.active {
     background-color: white;
-    border: 0.125rem solid #1FDC6D; /* 2px to rem */
     color: #1FDC6D;
+    border: 0.125rem solid #1FDC6D; /* 2px to rem */
 }
 
 /* Translation Container */
